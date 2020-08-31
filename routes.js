@@ -1,7 +1,11 @@
 const express = require("express");
 const UrlController = require("./src/controllers/UrlController");
+const loginController = require("./src/controllers/loginController");
 
 const routes = express.Router();
+
+routes.post("/login", loginController.login);
+routes.post("/registrar", loginController.register);
 
 routes.get("/urls", UrlController.index);
 routes.get("/url/:id", UrlController.show);

@@ -7,9 +7,7 @@ module.exports = {
 
       return res.json(urls);
     } catch (error) {
-      return res
-        .status(400)
-        .send({ error: `Erro ao carregar as urls ${error}` });
+      return res.status(400).send({ error });
     }
   },
 
@@ -19,9 +17,7 @@ module.exports = {
 
       return res.json(url);
     } catch (error) {
-      return res
-        .status(400)
-        .send({ error: `Erro ao carregar as urls ${error}` });
+      return res.status(400).send({ error });
     }
   },
 
@@ -57,9 +53,7 @@ module.exports = {
 
       return res.json(url);
     } catch (error) {
-      return res
-        .status(400)
-        .send({ error: `Erro ao carregar as urls ${error}` });
+      return res.status(400).send({ error });
     }
   },
 
@@ -69,9 +63,7 @@ module.exports = {
 
       return res.send({ alert: "Apagado com sucesso" });
     } catch (error) {
-      return res
-        .status(400)
-        .send({ error: `Erro ao carregar as urls ${error}` });
+      return res.status(400).send({ error });
     }
   },
 
@@ -81,9 +73,7 @@ module.exports = {
 
       return res.json(url);
     } catch (error) {
-      return res
-        .status(400)
-        .send({ error: `Erro ao carregar as urls ${error}` });
+      return res.status(400).send({ error });
     }
   },
 };
