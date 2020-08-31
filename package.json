@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "dev": "nodemon ./server",
-    "start": "node ./server"
+    "start": "pm2 start ./server.js --name amarisbackend --watch --no-daemon",
+    "stop": "pm2 stop amarisbackend"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +18,8 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.10.0"
+    "mongoose": "^5.10.0",
+    "pm2": "^4.4.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"

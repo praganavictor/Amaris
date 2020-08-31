@@ -8,7 +8,7 @@ const routes = require("./routes");
 
 const server = express();
 
-mongoose.connect("mongodb://localhost:27017/amaris", {
+mongoose.connect("mongodb://db/amaris", {
   useUnifiedTopology: true,
   useNewUrlParser: true,
 });
